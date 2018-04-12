@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="XamlPerf.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:XamlPerf.ViewModels"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:MainViewModel />
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.Resources>
+            <Style x:Key="stretchedListView" TargetType="ListViewItem">
+                <Setter Property="HorizontalContentAlignment"  Value="Stretch"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <ListView ItemContainerStyle="{StaticResource stretchedListView}"
+                  ItemsSource="{Binding Orders}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <RelativePanel Padding="0 0 3 0" Margin="0 0 8 0">
+                        <TextBlock x:Name="tbItem" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                   Text="{Binding Item}" />
+                        <TextBlock x:Name="separator" Text="&#x00D7;" Margin="10 0" RelativePanel.RightOf="tbItem" />
+                        <TextBlock RelativePanel.RightOf="separator"
+                                   Text="{Binding Units}" />
+                        <TextBlock x:Name="tbCost" Text="{Binding UnitCost}" RelativePanel.AlignRightWithPanel="True" />
+                        <TextBlock RelativePanel.AlignRightWithPanel="True" RelativePanel.Below="tbCost"
+                                   Text="{Binding Total}" />
+                    </RelativePanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

@@ -1,0 +1,48 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NWApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="using:Prism.Windows.Mvvm"
+    xmlns:telerikGrid="using:Telerik.UI.Xaml.Controls.Grid"
+    x:Class="NWApp.Views.MainPage"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <telerikGrid:RadDataGrid x:Name="grid" ItemsSource="{x:Bind ViewModel.Customers, Mode=OneWay}" AutoGenerateColumns="False"
+                                 SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}">
+            <telerikGrid:RadDataGrid.Columns>
+                <telerikGrid:DataGridTemplateColumn Header="Initials" CanUserGroup="False">
+                    <telerikGrid:DataGridTemplateColumn.CellContentTemplate>
+                        <DataTemplate>
+                            <PersonPicture Width="30" Height="30" DisplayName="{Binding ContactName}" />
+                        </DataTemplate>
+                    </telerikGrid:DataGridTemplateColumn.CellContentTemplate>
+                </telerikGrid:DataGridTemplateColumn>
+                <telerikGrid:DataGridNumericalColumn PropertyName="ID" CanUserGroup="False" Width="15" />
+                <telerikGrid:DataGridTextColumn PropertyName="City" />
+                <telerikGrid:DataGridTextColumn PropertyName="ContactName" Header="Name" />
+                <telerikGrid:DataGridTextColumn PropertyName="ContactTitle" Header="Title" />
+                <telerikGrid:DataGridTextColumn PropertyName="CompanyName" Header="Company Name" />
+                <telerikGrid:DataGridTextColumn PropertyName="Country" />
+                <telerikGrid:DataGridTextColumn PropertyName="Fax" CanUserGroup="False" />
+                <telerikGrid:DataGridTextColumn PropertyName="Phone" CanUserGroup="False" />
+                <telerikGrid:DataGridTextColumn PropertyName="PostalCode" Header="PO Code" />
+                <telerikGrid:DataGridTextColumn PropertyName="Region" />
+            </telerikGrid:RadDataGrid.Columns>
+        </telerikGrid:RadDataGrid>
+
+        <CommandBar Grid.Row="1">
+            <AppBarButton Icon="Add" Label="Add new" Command="{x:Bind ViewModel.AddNewCustomerCommand}" />
+            <AppBarButton Icon="Edit" Label="Edit" Command="{x:Bind ViewModel.EditCustomerCommand}" />
+            <AppBarButton Icon="Delete" Label="Delete" Command="{x:Bind ViewModel.DeleteCustomerCommand}" />
+            <AppBarButton Icon="View" Label="View orders" Command="{x:Bind ViewModel.CustomerDetailsCommand}" />
+        </CommandBar>
+    </Grid>
+</Page>

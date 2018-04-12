@@ -1,0 +1,653 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Telerik UI for UWP</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href=" css/style.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="main" data-background="./img/telerik-bg.jpg">
+                <h2 class="title">Telerik UI for UWP</h2>
+                <div>
+                    <img alt="" src="./img/winlogo.png" class="no-border" width="130" style="padding-bottom: 28px;" />
+                    <img alt="" src="./img/telerik-ninja.png" class="no-border" width="130" style="padding-left: 50px; padding-right: 50px; margin-bottom: 25px" />
+                </div> 
+            </section>
+            <section id="speaker-and-company-info" data-background="./img/telerik-bg.jpg">
+                <section>
+                    <h3>Welcome</h3>
+                    <h4>Progress Virtual Classroom</h4>
+                    <img alt="" width="700" src="./img/virtual-academy.jpg" class="no-border" />
+                    <aside class="notes">
+                        <ul>
+                            <li>Welcome to virtual classroom</li>
+                            <li>The motivation for virtual classroom.</li>
+                            <li>Together with colegues.</li>
+                            <li>Post any question, comments and issus</li>
+                        </ul>
+                        <p>I am very proud to welcome you to this virtual classroom. Progress has a long history of providing tools to make developers happy and successful. They have great UI components, superb documentation, the very best support and now with Virtual Classroom - the very best training at no additional cost. This is a free training program for Telerik active license holders.</p>
+                    </aside>
+                </section>
+                <section id="training-schedule">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>Date</strong></td>
+                                <td><strong>Time</strong></td>
+                                <td><strong>Course</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>February 28, 2018</td>
+                                <td>9am - 1pm EST<strong></strong></td>
+                                <td><strong>Kendo UI &amp; Angular</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 7, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for ASP.NET MVC and ASP.NET Core</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 8, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Kendo UI &amp; React</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 14, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Kendo UI &amp; jQuery</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 22, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Kendo UI &amp; Vue</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 27, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for Xamarin</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 30, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for WPF</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>April 5, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik Reporting &amp; Telerik Report Server</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>April 10, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for WinForms</strong><strong></strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>April 12, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for ASP.NET AJAX</strong><strong></strong></td>
+                            </tr>
+                            <tr class="current-training">
+                                <td>April 13, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for UWP</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <aside class="notes">
+                        <ul>
+                            <li>Virtual classroom is a training program for all DevCraft major products</li>
+                            <li>30 hours of content in partnership with NVS</li>
+                            <li>This program is designed to get you quickly onboarded</li>
+                            <li>What has passed and what is to come</li>
+                            <li>All of the recordings, videos, slides and demos will be available to you</li>
+                        </ul>
+                        <p>We have prepared more than 30 hours for technical content for you in partnership with New Venture Software. This program is designed to get you quickly onboarded with our developer tools whether you have been using them for years or are completely new to the suite. In each session we are going to provide practical knowledge, helpful approaches, we will focus on the best practices in order to get you started with application development. All of the recordings, videos, slides and demos will be available to you after the training is complete.</p>
+                    </aside>
+                </section>
+                <section id="speaker-info">
+                    <div class="speaker-img-container">
+                        <img alt="" src="./img/speaker.jpg" width="200" />
+                        <h4>Yavor Ivanov</h4>
+                    </div>
+                    <table class="speaker-contact-info">
+                        <tbody>
+                            <tr>
+                                <td><img alt="" class="no-border" src="./img/email.png" width="50"></td>
+                                <td style="vertical-align:middle"> <a href="mailto:yavor@newventuresoftware.com?Subject=Hello" target="_blank">yavor@newventuresoftware.com</a></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="" class="no-border" src="./img/web.png" width="50"></td>
+                                <td style="vertical-align:middle"> <a href="https://www.newventuresoftware.com/blog" target="_blank">www.newventuresoftware.com/blog</a></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="" class="no-border" src="./img/github.png" width="50"></td>
+                                <td style="vertical-align:middle"> <a href="https://github.com/yavor87" target="_blank">github.com/yavor87</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <aside class="notes">
+                        <ul>
+                            <li>About myself and my experience</li>
+                            <li>Helped build the DevCraft suite</li>
+                            <li>Any feedback, suggestions or need help</li>
+                            <li>Contact info</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section data-background="./img/Training-intro-slide.jpg">
+                    <aside class="notes">
+                            <h2>New Venture Software</h2>
+                            <p>
+                                A premium consulting and professional services partner for Progress Telerik products and technologies.
+                            </p>
+                        </aside>
+                </section>
+                <section id="nvs-partners" data-background="./img/Training-intro-slide+bullets.jpg">
+                    <aside class="notes">
+                        <ol>
+                            <li>
+                                Most of us are ex-Progress software architects who have led a number of teams building the Telerik DevCraft suite.
+                            </li>
+                            <li>
+                                We support all progress Telerik products and technologies be it for the web, desktop or mobile.
+                            </li>
+                            <li>
+                                Successful track record of delivering future-proof software consulting and development solutions.
+                            </li>
+                            <li>
+                                My teammates and I feel honoured and excited to have the opportunity to share our experience and passion about the Telerik technologies.
+                            </li>
+                        </ol>
+                    </aside>
+                </section>
+            </section>
+            <section id="agenda" class="color-white" data-background-image="./img/school-board.jpg">
+                <h3>Agenda</h3>
+                <ul>
+                    <li class="fragment">Getting started with UWP</li>
+                    <li class="fragment">Targeting both UWP &amp; WPF</li>
+                    <li class="fragment">Telerik UI for WPF</li>
+                </ul>
+            </section>
+            <section id="uwp-intro">
+                <section data-background="./img/ready-to-start-org.jpg">
+                    <aside class="notes">
+                        <a href="https://github.com/newventuresoftware/uwp-training">GitHub repo</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>UWP benefits</h3>
+                    <ol class="present">
+                        <li class="fragment">Common API</li>
+                        <li class="fragment">Store</li>
+                        <li class="fragment">Utilize the latest Windows features</li>
+                        <li class="fragment">Great performance</li>
+                    </ol>
+                    <aside class="notes">
+                        <p>Target desktops, tablets and convertibles, iot devices and new and emerging device categories like VR and AR.</p>
+                        <p>Apps distributed from the Store provide a seamless install, uninstall, and upgrade experience. UWP apps can be uninstalled without leaving anything behind. Apps can be deployed and updated seamlessly. App packaging can be modularized so that you can download content and extensions on demand. You can submit your app to the store and make it available to all types of devices, or only those you choose. You submit and manage all your apps for Windows devices in one place. You can easily monetize your app in the store with things like paid downloads, in-app purchases, subscriptions.</p>
+                        <p>You can leverage the latest and greatest features of Windows like live tiles, toasts, background services, Compact overlay (picture in picture) and fluent design. Microsoft builds the stock application using the same tools and the same components, so you can be sure that they will be updated constantly.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>App Structure</h3>
+                    <img alt="" class="no-border" src="./img/ApplicationStructure.png">
+                </section>
+                <section>
+                    <h3>Application Class</h3>
+                    <img alt="" class="no-border" src="./img/app_class.png">
+                </section>
+                <section>
+                    <h3>Window Structure</h3>
+                    <img alt="" class="no-border" src="./img/ApplicationStructure2.png">
+                    <aside class="notes">
+                        <p><strong>Window</strong> gives us the surface area, the chrome, minimize, maximize buttons go. It hosts typically a <code>Frame</code>. It is not required, but it is very common.</p>
+                        <p><strong>Frame</strong> controls the navigation within our application. It displays the first Page or piece of UI and its job is to display other Pages or pieces of UI using navigation. It allows you to do forward and backward navigation, typically refered as stack navigation. Most apps have more than one Page to show, but event single page apps will still get a <code>Frame</code></p>
+                        <p><strong>Immersive mode</strong> Non-resizable on mobile, iot and Xbox. On a Tablet or a PC in Tablet mode you have limited sizing options. The app can be displayed full screen or docked left or right.</p>
+                        <p>It is also posible to create new windows and there are varios options for managing the window. UWP is not only about single window apps.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Page implementation</h3>
+<pre><code data-noescape>&lt;Page x:Class=&quot;App.MainPage&quot;
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;&gt;
+    &lt;Grid&gt;
+        &lt;Rectangle x:Name=&quot;redRt&quot; Width=&quot;40&quot; Height=&quot;15&quot; Fill=&quot;Red&quot; /&gt;
+    &lt;/Grid&gt;
+&lt;/Page&gt;</code></pre>
+                    <pre><code>public sealed partial class MainPage : Page
+{
+    public MainPage()
+    {
+        this.InitializeComponent();
+    }
+}</code></pre>
+                </section>
+                <section>
+                    <h3>App manifest</h3>
+                    <ul class="present">
+                        <li class="fragment">Identity</li>
+                        <li class="fragment">Visual Assets</li>
+                        <li class="fragment">Capabilities</li>
+                        <li class="fragment">Declarations</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>The package manifest is an XML document that contains the info the system needs to deploy, display, or update a Windows app. This info includes package identity, package dependencies, required capabilities, visual elements, and extensibility points. Every app package must include one package manifest.</p>
+
+                        <p>The package manifest is digitally signed as part of signing the app package. After signing, you can't modify the manifest without invalidating the package signature. After the package has been installed, the package manifest file appears in the directory for the installed package.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Data Binding v2</h3>
+                    <h4>x:Bind</h4>
+                    <ul class="present">
+                        <li class="fragment">Performance</li>
+                        <li class="fragment">Casting</li>
+                        <li class="fragment">Functions in binding paths</li>
+                        <li class="fragment">Event binding</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>new for Windows 10—is an alternative to {Binding}. {x:Bind} lacks some of the features of {Binding}, but it runs in less time and less memory than {Binding} and supports better debugging.</p>
+                        <p>At XAML compile time, {x:Bind} is converted into code that will get a value from a property on a data source, and set it on the property specified in markup. The binding object can optionally be configured to observe changes in the value of the data source property and refresh itself based on those changes. <em>Note</em>: {x:Bind} has a default mode of OneTime, unlike {Binding}.</p>
+                        <p>Because {x:Bind} uses generated code to achieve its benefits, it requires type information at compile time. This means that you cannot bind to properties where you do not know the type ahead of time. Because of this, you cannot use {x:Bind} with the DataContext property, which is of type Object, and is also subject to change at run time.</p>
+                        <p>Anniversary Update brought Function support to the x:Binding.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Optimizing XAML Load time</h3>
+                    <ul class="present">
+                        <li class="fragment">x:Phase</li>
+                        <li class="fragment">x:DeferLoadStrategy</li>
+                        <li class="fragment">x:Load</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>Use x:Phase with the {x:Bind} markup extension to render ListView and GridView items incrementally and improve the panning experience. If a list is panned fast with touch, or using the mouse wheel, then depending on the complexity of the data template, the list may not be able to render items fast enough to keep up with the speed of scrolling. This is particularly true for a portable device with a power-efficient CPU such as a iot device or a tablet.</p>
+                        <p>You can use x:DeferLoadStrategy="Lazy" to optimize the startup or tree creation performance of your XAML app. When you use x:DeferLoadStrategy="Lazy", creation of an element and its children is delayed, which decreases startup time and memory costs. This is useful to reduce the costs of elements that are shown infrequently or conditionally. The element will be realized when it's referred to from code or VisualStateManager.</p>
+                        <ul>
+                            <li>You must define an x:Name for the element, as there needs to be a way to find the element later.</li>
+                            <li>You can only defer types that derive from UIElement or FlyoutBase.</li>
+                            <li>You cannot defer root elements in a Page, a UserControl, or a DataTemplate.</li>
+                            <li>You cannot defer elements in a ResourceDictionary.</li>
+                        </ul>
+                        <p>You can realize the item using a call to <code>FindName()</code> with the name that you defined on the element or a call to <code>GetTemplateChild</code> with the name that you defined on the element.</p>
+
+                        <p>x:Load was introduced in Windows 10, version 1703 (Creators Update).</p>
+                        <p>You can use x:Load to optimize the startup, visual tree creation, and memory usage of your XAML app. Using x:Load has a similar visual effect to Visibility, except that when the element is not loaded, its memory is released and internally a small placeholder is used to mark its place in the visual tree.</p>
+
+                        <p>The UI element attributed with x:Load can be loaded and unloaded via code, or using an x:Bind expression. This is useful to reduce the costs of elements that are shown infrequently or conditionally. When you use x:Load on a container such as Grid or StackPanel, the container and all of its children are loaded or unloaded as a group.</p>
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - XAML</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">Optimize XAML loading with x:Phase</li>
+                        <li class="fragment">Defer XAML loading</li>
+                        <li class="fragment">Optimize bindings with x:Bind</li>
+                        <li class="fragment">Navigate between pages</li>
+                    </ul>
+                    <aside class="notes">
+                    	Demostrate app <em>XamlPerf</em>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Controls</h3>
+                </section>
+                <section>
+                    <h3>Adaptive Appearance</h3>
+                    <img alt="" src="./img/adaptive_control.png" class="no-border">
+                    <aside class="notes">
+                        <p>The controls can adjust their appearance automatically to account for the device capabilities, screen size.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Adaptive Input</h3>
+                    <img alt="" src="./img/adaptive_input.png" class="no-border">
+                    <aside class="notes">
+                        <p>The controls can adjust their appearance automatically to account for the device input capabilities.</p>
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Demonstration</h3>
+                    <h4>XAML Controls Gallery</h4>
+                </section>
+                <section>
+                    <h3>Adaptive Code</h3>
+                </section>
+                <section>
+                    <img class="no-border" src="./img/Treadwell2.png" width="700">
+                    <aside class="notes">
+                        <p>Many UWP apps will not need to use any device family-specific APIs. In fact, more than 85% of all your api calls will be in the shared SDK. But for those that do require platform specific APIs, there are Platform extension SDKs. Using API contracts, through the magic of native .NET and the device family API extensions, it’s possible to create an app that may be tailored at runtime to ‘light up’ on the device it’s running on.</p>
+                        <p></p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Platform Extensions</h3>
+                    <img alt="" class="no-border" src="./img/extension_sdks.png">
+                    <aside class="notes">
+                        <p>You have those different platform extension SDKs and in order to use them you just add a reference to them.</p>
+                        <p>Platform extensions don't invalidate binaries on other devices</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Testing for capabilities</h3>
+                    <ul>
+                        <li><code>IsApiContractPresent</code></li>
+                        <li><mark><code>IsTypePresent</code></mark></li>
+                        <li><code>IsEnumNamedValuePresent</code></li>
+                        <li><code>IsEventPresent</code></li>
+                        <li><code>IsMethodPresent</code></li>
+                        <li><code>IsPropertyPresent</code></li>
+                        <li><code>IsReadOnlyPropertyPresent</code></li>
+                        <li><code>IsWriteablePropertyPresent</code></li>
+                    </li>
+                </section>
+                <section>
+                    <h3>Testing for Api Contract presence</h3>
+                    <pre><code>if (ApiInformation.IsApiContractPresent(
+            "Windows.Media.Playlists.PlaylistsContract"), 1, 0)
+{
+    // Now I can use all PlayList APIs
+}</code></pre>
+                    <aside class="notes">
+                        <p>So what’s an API contract? At heart, an API contract is a set of APIs. In many ways, an API contract represents a feature – a set of related APIs that together deliver some particular functionality. Every Windows Runtime API from Windows 10 onward is a member of some API contract. The documentation describes the variety of API contracts available. You’ll see that most of them represent a set of functionally related APIs.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Testing for capabilities</h3>
+                    <pre><code>if (ApiInformation.IsTypePresent(
+            "Windows.Media.Playlists.Playlist"))
+{
+    await myAwesomePlaylist.SaveAsAsync( ... );
+}</code></pre>
+                </section>
+                <section>
+                    <h3>Limiting your app reach</h3>
+                    <p>Runs on all UWP device families:</p>
+<pre><code data-noescape>&lt;Dependencies&gt;
+  &lt;TargetDeviceFamily Name=&quot;Windows.Universal&quot; MinVersion=&quot;10.0.0.0&quot;
+                      MaxVersionTested=&quot;10.0.1709.0&quot; /&gt;
+&lt;/Dependencies&gt;</code></pre>
+                    <p>Runs on all UWP, but limitations apply to Desktop:</p>
+<pre><code data-noescape>&lt;Dependencies&gt;
+  &lt;TargetDeviceFamily Name=&quot;Windows.Universal&quot; MinVersion=&quot;10.0.0.0&quot;
+                      MaxVersionTested=&quot;10.0.1709.0&quot; /&gt;
+  &lt;TargetDeviceFamily Name=&quot;Windows.Desktop&quot; MinVersion=&quot;10.0.1607.0&quot;
+                      MaxVersionTested=&quot;10.0.1709.0&quot; /&gt;
+&lt;/Dependencies&gt;</code></pre>
+                    <aside class="notes">
+                        <p>To target the set of APIs known as the "universal device family" (which means your app runs on all devices), just specify that one device family, as in the example below. You can still write adaptive code to light up APIs outside of the universal device family when your app is running on devices in specific device families.</p>
+                        <p>Your app can pose limitations on the possible devices that it can be run on. In the secondcode snippet, devices that implement the desktop device family, the app requires at least version 10.0.1607.0 to be present. This is how you indicate that you do not support versions of child device families earlier than a specified minimum version, even if that differs from the version you support for the general case.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Limiting your app reach</h3>
+                    <p>Runs only on Desktop device family:</p>
+<pre><code data-noescape>&lt;Dependencies&gt;
+  &lt;TargetDeviceFamily Name=&quot;Windows.Desktop&quot; MinVersion=&quot;10.0.0.0&quot;
+                      MaxVersionTested=&quot;10.0.1709.0&quot; /&gt;
+&lt;/Dependencies&gt;</code></pre>
+                    <p>Runs only on Desktop and Xbox device family:</p>
+<pre><code data-noescape>&lt;Dependencies&gt;
+  &lt;TargetDeviceFamily Name=&quot;Windows.Desktop&quot; MinVersion=&quot;10.0.0.0&quot;
+                      MaxVersionTested=&quot;10.0.1709.0&quot; /&gt;
+  &lt;TargetDeviceFamily Name=&quot;Windows.Xbox&quot; MinVersion=&quot;10.0.0.0&quot;
+                      MaxVersionTested=&quot;10.0.1709.0&quot; /&gt;
+&lt;/Dependencies&gt;</code></pre>
+                    <aside class="notes">
+                        <p>If you target the the universal device family, your app will be available on all supported devices. But maybe your app doesn't make sense on a HoloLens or a headless iot device. So instead of targeting the universal device family, you can choose to target your app at one or more of the child device families that you have tested your application on and you are sure it is working great.</p>
+                        <p>Another option is to specialize your application for a desktop PC or for an Xbox console. In that case you can choose to target your app at one of the child device families. For example, if you target the desktop device family, the APIs guaranteed to be available to your app, include the APIs inherited from the universal device family, as well as the APIs that are particular to the desktop device family.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Adaptive UI</h3>
+                </section>
+                <section>
+                    <h3>Effective pixels</h3>
+                    <img alt="" class="no-border" src="./img/effective_pixels.png">
+                    <aside class="notes">
+                        <p>First important rule of UWP design is that your sizes, margins, spacing should all be cleanly divisible by four. The reason for this is that UWP have adopted a common effective pixel size across all devices. You create layouts using effective pixels, which is independent of physical screen resolution. However, as your app runs on many different screens at many different physical screen resolutions, the display system scales your UI up or down as necessary. By making all your sizes cleanly divisible by four, you will end up with crisper layout and text and avoid fuzziness.</p>
+                        <p>An effective pixel is a logical sizing unit that actually consists of one or more physical pixels. You should ignore scale, resolution and dpi. Design your UI in effective pixels.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Scaling algorithm</h3>
+                    <img alt="" class="no-border" src="./img/effective_scale.png">
+                    <aside class="notes">
+                        <p>The effective pixel system takes into account a number of factors and allows you to layout your pages without having to adjust for the device type or the physical screen resolution.</p>
+                        <p>One factor that determines how large the system will render an item on a particular screen is the scaling algorithm. This takes into account the typical viewing distance of a class of device – a phone is typically held close to the eyes, whereas tablets are held further back, PCs/laptops further back again, and Surface Hub is typically viewed across a room. The scaling algorithm ensures that when you size some UI feature using effective pixels, it will have the same perceivable size regardless if which device it is displayed upon.</p>
+                        <p>You can provide scale dependent images in your application.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Planning for adaptive design</h3>
+                    <img alt="" class="no-border" src="./img/adaptive_design.png">
+                    <aside class="notes">
+                        <p>When you think of the broad range of screen sizes available across all Windows 10 devices, from 4.5” phones up to the 84” Surface Hub, it can seem daunting to create an adaptive UI that will work well across all of these.</p>
+
+                        <p>Our advice is to target a few key scenarios:</p>
+                        <ul>
+                            <li>Small device in portrait (5” phone)</li>
+                            <li>8” tablet in portrait and landscape</li>
+                            <li>13” laptop/PC in landscape</li>
+                        </ul>
+
+                        <p>If you focus on these key targets, and use adaptive layout techniques such as Grid layout and controls that can wrap and flow output such as the TextBlock with Wrapping set to true, then you should find that you will end up with good results across all the targeted devices and also on those intermediaries. You can then target additional screens such as large monitors, Surface Hub or Xbox if it makes sense for your app.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Adaptive design techniques</h3>
+                    <img alt="" class="no-border" src="./img/adaptive_design_principals.png">
+                    <aside class="notes">
+                        <p>It should be no surprise that the techniques you should use for XAML pages are exactly the same as those used by web designers to create adaptive web pages. What we have done with Windows 10 is bring adaptive web UI techniques to native XAML apps.</p>
+                        <ol>
+                            <li><strong>Reposition</strong> – You can move blocks of content around on the page. For example, in landscape, you can have islands of content extending across the page horizontally, but in a narrow screen layout, move content so that it is laid out more like a single column.</li>
+                            <li><strong>Resize</strong> – You can simply allow content on the page to grow and shrink as the window size changes. Using a Grid with proportional column/row sizes is a great way of achieving this.</li>
+                            <li><strong>Reflow</strong> – This means to have text, for example, change from a single column on a narrow screen to span two or more columns on wider screens.</li>
+                            <li><strong>Reveal</strong> – here you will show additional content areas as the screen width increases, hide them as the screen width decreases.</li>
+                            <li><strong>Replace</strong> – With this technique you replace one layout of some content with a different layout depending on the screen size, to ensure a great, screen-appropriate layout on all screen sizes</li>
+                            <li><strong>Re-architect</strong> – When you re-architect, you go for a substantially different layout on different size screens, or on different device families. In XAML terms, this often means to navigate to a specific page for some scenario, such as when running on an Xbox, where the user interactions through a controller may be substantially different to the same app running on a PC or phone.</li>
+                        </ol>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Visual States</h3>
+                    <img alt="" class="no-border" src="./img/mail_adaptive.png">
+                    <aside class="notes">
+                        <p>Visual states allow you to define different selectable layouts that can be applied to your UI</p>
+                        <p>When you define a visual sate, you give it a name, and you change properties of the controls on your UI, such as visibility or sizes. These changes can be applied together when a particular named visual state is applied.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Code-free state transition</h3>
+<pre><code data-noescape>&lt;AdaptiveTrigger MinWindowWidth=&quot;501&quot; /&gt; &lt;!--Wider than this--&gt;
+&lt;AdaptiveTrigger MinWindowHeight=&quot;320&quot; /&gt; &lt;!--Taller than this--&gt;</code></pre>
+                    <aside class="notes">
+                        <p>You can now define the trigger that causes a visual state to be activated directly in XAML. Adaptive visual states allow you to change the visual state in response to changes in the width of the window based on MinWindowWidth or MinWindowHeight.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Visual States</h3>
+<pre><code data-noescape>&lt;VisualState x:Name=&quot;Wide&quot;&gt;
+    &lt;VisualState.StateTriggers&gt;
+        &lt;AdaptiveTrigger MinWindowWidth=&quot;1280&quot; /&gt;
+    &lt;/VisualState.StateTriggers&gt;
+    &lt;VisualState.Setters&gt;
+        &lt;Setter Target=&quot;greenRect.(RelativePanel.Below)&quot;
+                Value=&quot;redRect&quot; /&gt;
+        ...
+    &lt;/VisualState.Setters&gt;
+&lt;/VisualState&gt;</code></pre>
+                    <aside class="notes">
+                        <p>The other innovation in UWP around Visual States is Setters. Prior to UWP, all property changes to controls applied within a visual state had to be defined in a storyboard. While you can still do this, a much simpler syntax can now be used for those properties that just need to change from one value to another, and do not need a timeline or gradual transition that is possible by using a storyboard.</p>
+                    </aside>
+                </section>
+                <section data-background-color="#fff">
+                    <h3>Custom adaptive triggers</h3>
+                    <pre><code>public class DeviceFamilyTrigger : StateTriggerBase
+{
+    private string _deviceFamily;
+    public string DeviceFamily
+    {
+        get { return _deviceFamily; }
+        set
+        {
+            _deviceFamily = value;
+            var qualifiers = Windows.ApplicationModel.Resources.Core
+                .ResourceContext.GetForCurrentView().QualifierValues;
+            SetActive(qualifiers.ContainsKey("DeviceFamily") &amp;&amp;
+                qualifiers["DeviceFamily"] == _deviceFamily);
+        }
+    }
+}</code></pre>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - Adaptive UI</h3>
+                    <aside class="notes">
+                        Demostrate app <em>AdaptiveApp</em> &amp; <em>Photo lab</em>
+                    </aside>
+                </section>
+            </section>
+            <section id="bridging">
+                <section data-background-color="#595959">
+                    <h3>Windows 10 market share</h3>
+                    <img class="no-border" src="./img/market_share.png" />
+                    <aside class="notes">
+                        <p>Windows 10 is on the rise. Windows is being moved to a rolling release model. New features and updates are constantly being pushed. Customers will be on the latest version. They can delay the updates for some time. Windows 10 has a free edition, named Windows 10S, which allows only UWP apps. In some categories, like tablets and convertibles and emerging technologies like iot, VR and AR Windows 10 has a lot of potential.</p>
+                        <a href="https://venturebeat.com/2018/02/01/statcounter-windows-10-overtakes-windows-7-in-usage-share/">Venturebeat</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Desktop Bridge</h3>
+                    <ul class="present">
+                        <li class="fragment">Streamlined deployment</li>
+                        <li class="fragment">Automatic updates and licensing</li>
+                        <li class="fragment">Increased reach and simplified monetization</li>
+                        <li class="fragment">Add UWP features</li>
+                        <li class="fragment">Broadened use-cases across device</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li><strong>Streamlined deployment</strong>: Apps and games that use the bridge have a great deployment experience. This ensures that users can confidently install an app and update it. If a user chooses to uninstall the app, it's removed completely with no trace left behind. This reduces time authoring setup experiences and keeping users up-to-date.</li>
+                            <li><strong>Automatic updates and licensing</strong>: Your app can participate in the Microsoft Store's built-in licensing and automatic update facilities. Automatic update is a highly reliable and efficient mechanism, because only the changed parts of files are downloaded.</li>
+                            <li><strong>Increased reach and simplified monetization</strong>: Choosing to distribute through the Microsoft Store expands your reach to millions of Windows 10 users, who can acquire apps, games and in-app purchases with local payment options.</li>
+                            <li><strong>Add UWP features</strong>: At your own pace, you can add UWP features to your app's package, like a XAML user-interface, live tile updates, UWP background tasks, app services, and many more.</li>
+                            <li><strong>Broadened use-cases across device</strong>: Using the bridge, you can gradually migrate your code to the Universal Windows Platform to reach every Windows 10 device, including phones, Xbox One and HoloLens.</li>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Telerik UI for UWP</h3>
+                    <img alt="" class="no-border" src="./img/ui-for-uwp-controls-in-action.jpg" width="400">
+                    <img alt="" class="no-border" src="./img/apache-license-800x210.png" width="200">
+                    <aside class="notes">
+                    	<p>You can find the source code (Apache License v2.0) and the documentation on GitHub. What's more, we're now accepting pull requests and issues for bugs/feedback!</p>
+                    	<a href="https://github.com/telerik/UI-For-UWP">GitHub repo</a>
+                    </aside>
+                </section>
+                <section>
+                	<h3>Installing Telerik components</h3>
+                	<p>Nuget</p>
+                	<pre><code class="nohighlight">PM> Install-Package Telerik.UI.for.UniversalWindowsPlatform</code></pre>
+                </section>
+                <section id="uwp-controls">
+                    <h3>Controls</h3>
+                    <table style="font-size: 28px;">
+                        <tr><td>RadAutoCompleteBox</td><td>RadBulletGraph</td><td>RadBusyIndicator</td></tr>
+                        <tr><td>RadCalendar</td><td>RadChart</td><td>RadDataBoundListBox</td></tr>
+                        <tr><td>RadDataForm</td><td>RadDataGrid</td><td>RadDatePicker</td></tr>
+                        <tr><td>RadTimePicker</td><td>RadExpander</td><td>RadGauge</td></tr>
+                        <tr><td>RadHexView</td><td>RadHubTile</td><td>RadListView</td></tr>
+                        <tr><td>RadLoopingList</td><td>RadMap</td><td>RadNumericBox</td></tr>
+                        <tr><td>RadPagination</td><td>RadRadialMenu</td><td>RadRangeSlider</td></tr>
+                        <tr><td>RadRating</td><td>RadSideDrawer</td></tr>
+                    </table>
+                    <aside class="notes">
+                    	<p>The suite contains controls that address common UI requirements in line-of-business (LOB) applications. These include data management (DataForm), scheduling (Calendar), navigation (RadialMenu), data visualization (Chart), and more. Actually, the list itself is rather long</p>
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding</h3>
+                    <!--TODO: Add-->
+                </section>
+            </section>
+            <section id="questions">
+                <h3>Questions?</h3>
+                <img class="" src="./img/cats-staring.jpg" width="500" />
+            </section>
+            <section id="end">
+                <h2>Thank You!</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img class="no-border" src="./img/email.png" style="width:70px"></td>
+                            <td style="vertical-align:middle"> <a href="mailto:yavor@newventuresoftware.com?Subject=Hello" target="_blank">yavor@newventuresoftware.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><img class="no-border" src="./img/github.png" width="70"></td>
+                            <td style="vertical-align:middle"> <a href="https://github.com/yavor87" target="_blank">github.com/yavor87</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <section class="reveal-shared">
+            <div class="nvs-logo-container">
+                <a href="http://www.newventuresoftware.com/" target="_blank">
+                    <img class="no-border" src="./img/nvs-logo.svg" width="150"/>
+                </a>
+            </div>
+            <div class="progress-logo-container">
+                <img alt="" src="./img/progress-watermarks/Progress_Logos_Telerik-UWP_vertical.png" class="no-border" width="250" />
+            </div>
+            <div class="nvs-website-bar">
+                <span class="nvs-website-text brackets">www.newventuresoftware.com</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+         // More info about config & dependencies:
+         // - https://github.com/hakimel/reveal.js#configuration
+         // - https://github.com/hakimel/reveal.js#dependencies
+         Reveal.initialize({
+            history: true,
+            progress: true,
+            touch: true,
+            transition: 'fade-in',
+            dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ],
+            slideNumber: 'c/t'
+         });
+     </script>
+ </body>
+ </html>

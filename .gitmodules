@@ -1,0 +1,3 @@
+[submodule "demos/Windows-appsample-photo-lab"]
+	path = demos/Windows-appsample-photo-lab
+	url = https://github.com/Microsoft/Windows-appsample-photo-lab
