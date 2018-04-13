@@ -49,9 +49,14 @@ namespace NWApp.Services
 * Navigate to `\demos\complete\AdaptiveApp`
 * A simple build is sufficient.
 
-### Sample Photo Lab
+### Sample Photo Lab [Repo](https://github.com/Microsoft/Windows-appsample-photo-lab)
 
 * Navigate to `\demos\Windows-appsample-photo-lab`
+* A simple build is sufficient.
+
+### Customers Orders Database sample [Repo](https://github.com/Microsoft/Windows-appsample-customers-orders-database)
+
+* Navigate to `\demos\Windows-appsample-customers-orders-database`
 * A simple build is sufficient.
 
 ### NWApp
