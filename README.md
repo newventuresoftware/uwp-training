@@ -16,28 +16,6 @@ Open slides/index.html in your browser or run the presentation on [RawGit](https
 ### Prerequisites
 
 * [Visual Studio](https://www.visualstudio.com/downloads/) - you need Visual Studio for Windows in order to compile and run UWP projects. 
-* [NodeJS](https://nodejs.org/en/) - (optional) used for downloading the dependencies and running the demo REST service. Not required for UWP development;
-
-After installing NodeJS, you can start the demo REST service through `npm` (Node Package Manager). Enter in the `Command Prompt` the following command:
-
-```bash
-cd service
-npm install
-npm start
-```
-
-As this is a service running on your machine, you need to obtain your local network ip address and update the following constant:
-```
-namespace NWApp.Services
-{
-    public class NorthwindService : INorthwindService
-    {
-        ...
-        private static string baseServiceUrl = "<your ip>:3000";
-        ...
-    }
-}
-```
 
 ### XamlPerf
 
@@ -60,6 +38,31 @@ namespace NWApp.Services
 * A simple build is sufficient.
 
 ### NWApp
+
+#### Prerequisites
+
+* [NodeJS](https://nodejs.org/en/) - (optional) used for downloading the dependencies and running the demo REST service. Not required for UWP development;
+
+After installing NodeJS, you can start the demo REST service through `npm` (Node Package Manager). Enter in the `Command Prompt` the following command:
+
+```bash
+cd service
+npm install
+npm start
+```
+
+As this is a service running on your machine, you need to obtain your local network ip address and update the following constant:
+```
+namespace NWApp.Services
+{
+    public class NorthwindService : INorthwindService
+    {
+        ...
+        private static string baseServiceUrl = "<your ip>:3000";
+        ...
+    }
+}
+```
 
 * Navigate to `\demos\complete\NWApp`
 * A simple build is sufficient.
