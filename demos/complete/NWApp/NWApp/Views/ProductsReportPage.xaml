@@ -5,13 +5,18 @@
     xmlns:local="using:NWApp.Views"
     xmlns:prism="using:Prism.Windows.Mvvm"
     xmlns:telerikChart="using:Telerik.UI.Xaml.Controls.Chart"
+    xmlns:primitives="using:Telerik.UI.Xaml.Controls.Primitives"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <telerikChart:RadCartesianChart PaletteName="DefaultLight">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <telerikChart:RadCartesianChart x:Name="chart" PaletteName="DefaultLight">
             <telerikChart:RadCartesianChart.HorizontalAxis>
                 <telerikChart:CategoricalAxis Title="USD" />
             </telerikChart:RadCartesianChart.HorizontalAxis>
@@ -21,7 +26,7 @@
             </telerikChart:RadCartesianChart.VerticalAxis>
 
             <telerikChart:RadCartesianChart.Series>
-                <telerikChart:BarSeries ItemsSource="{x:Bind ViewModel.Products}">
+                <telerikChart:BarSeries ItemsSource="{x:Bind ViewModel.Products, Mode=OneWay}" LegendTitle="Unit Price ($)">
                     <telerikChart:BarSeries.CategoryBinding>
                         <telerikChart:PropertyNameDataPointBinding PropertyName="ProductName" />
                     </telerikChart:BarSeries.CategoryBinding>
@@ -31,7 +36,7 @@
                 </telerikChart:BarSeries>
 
                 <!--Line series-->
-                <telerikChart:LineSeries ItemsSource="{x:Bind ViewModel.Products}">
+                <telerikChart:LineSeries ItemsSource="{x:Bind ViewModel.Products, Mode=OneWay}" LegendTitle="Units in Stock">
                     <telerikChart:LineSeries.CategoryBinding>
                         <telerikChart:PropertyNameDataPointBinding PropertyName="ProductName" />
                     </telerikChart:LineSeries.CategoryBinding>
@@ -72,5 +77,15 @@
                 <telerikChart:ChartTrackBallBehavior />
             </telerikChart:RadCartesianChart.Behaviors>
         </telerikChart:RadCartesianChart>
+
+        <!--Legend-->
+        <primitives:RadLegendControl Grid.Row="1" HorizontalAlignment="Center"
+                                     LegendProvider="{x:Bind chart, Mode=OneWay}">
+            <primitives:RadLegendControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </primitives:RadLegendControl.ItemsPanel>
+        </primitives:RadLegendControl>
     </Grid>
 </Page>

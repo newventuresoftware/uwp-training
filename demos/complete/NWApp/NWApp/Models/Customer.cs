@@ -25,37 +25,37 @@ namespace NWApp.Models
 
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
 
-        [Display("ID")]
+        [Display("ID", placeholderText: "5 character customer Id (required)")]
         public string ID { get => _id; set => SetProperty(ref _id, value); }
 
-        [Display("Contact Name")]
+        [Display("Contact Name", placeholderText: "Contact name (required)")]
         public string ContactName { get => _contactName; set => SetProperty(ref _contactName, value); }
 
-        [Display("Contact Title")]
+        [Display("Contact Title", placeholderText: "Contact title")]
         public string ContactTitle { get => _contactTitle; set => SetProperty(ref _contactTitle, value); }
 
-        [Display("Company Name")]
+        [Display("Company Name", placeholderText: "Company name (required)")]
         public string CompanyName { get => _companyName; set => SetProperty(ref _companyName, value); }
 
-        [Display("Phone", Group = Group_ContactInfo)]
+        [Display("Phone", placeholderText: "Phone", Group = Group_ContactInfo)]
         public string Phone { get => _phone; set => SetProperty(ref _phone, value); }
 
-        [Display("Fax", Group = Group_ContactInfo)]
+        [Display("Fax", placeholderText: "Fax", Group = Group_ContactInfo)]
         public string Fax { get => _fax; set => SetProperty(ref _fax, value); }
 
-        [Display("Address", Group = Group_Address)]
+        [Display("Address", placeholderText: "Address", Group = Group_Address)]
         public string Address { get => _address; set => SetProperty(ref _address, value); }
 
-        [Display("PO Code", Group = Group_Address)]
+        [Display("PO Code", placeholderText: "Postal code", Group = Group_Address)]
         public string PostalCode { get => _postalCode; set => SetProperty(ref _postalCode, value); }
 
-        [Display("City", Group = Group_Address)]
+        [Display("City", placeholderText: "City", Group = Group_Address)]
         public string City { get => _city; set => SetProperty(ref _city, value); }
 
-        [Display("Country", Group = Group_Address)]
+        [Display("Country", placeholderText: "Country", Group = Group_Address)]
         public string Country { get => _country; set => SetProperty(ref _country, value); }
 
-        [Display("Region", Group = Group_Address)]
+        [Display("Region", placeholderText: "Region", Group = Group_Address)]
         public string Region { get => _region; set => SetProperty(ref _region, value); }
 
         public bool HasErrors => this.errorsContainer.HasErrors;

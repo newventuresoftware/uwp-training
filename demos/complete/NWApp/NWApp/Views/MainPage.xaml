@@ -42,7 +42,7 @@
             <AppBarButton Icon="Add" Label="Add new" Command="{x:Bind ViewModel.AddNewCustomerCommand}" />
             <AppBarButton Icon="Edit" Label="Edit" Command="{x:Bind ViewModel.EditCustomerCommand}" />
             <AppBarButton Icon="Delete" Label="Delete" Command="{x:Bind ViewModel.DeleteCustomerCommand}" />
-            <AppBarButton Icon="View" Label="View orders" Command="{x:Bind ViewModel.CustomerDetailsCommand}" />
+            <AppBarButton Icon="Admin" Label="View orders" Command="{x:Bind ViewModel.CustomerDetailsCommand}" />
         </CommandBar>
     </Grid>
 </Page>
