@@ -18,7 +18,7 @@
         <ScrollViewer>
             <Custom:RadDataForm x:Name="dataForm" Width="400"
                                 Item="{x:Bind ViewModel.Customer, Mode=OneWay}"
-                                CommitMode="Immediate" ValidationMode="Immediate" />
+                                CommitMode="OnLostFocus" ValidationMode="Immediate" />
         </ScrollViewer>
 
         <CommandBar Grid.Row="1">
