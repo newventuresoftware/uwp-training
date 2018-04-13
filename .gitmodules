@@ -1,3 +1,6 @@
 [submodule "demos/Windows-appsample-photo-lab"]
 	path = demos/Windows-appsample-photo-lab
 	url = https://github.com/Microsoft/Windows-appsample-photo-lab
+[submodule "demos/Windows-appsample-customers-orders-database"]
+	path = demos/Windows-appsample-customers-orders-database
+	url = https://github.com/Microsoft/Windows-appsample-customers-orders-database
