@@ -152,7 +152,7 @@ namespace NWApp.Models
                     break;
             }
 
-            return Task.CompletedTask;
+            return new Task(() => { });
         }
 
         public IEnumerable GetErrors(string propertyName) => this.errorsContainer.GetErrors(propertyName);
