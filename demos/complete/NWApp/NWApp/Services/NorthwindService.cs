@@ -29,7 +29,7 @@ namespace NWApp.Services
         }
 
         private HttpClient client;
-        private static string baseServiceUrl = "192.168.2.24:3000";
+        private static string baseServiceUrl = "localhost:3000";
         private HashSet<string> registeredCustomerIds;
         private ObservableCollection<Customer> cachedCustomers;
 
