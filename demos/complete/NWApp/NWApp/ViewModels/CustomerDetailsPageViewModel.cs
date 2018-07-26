@@ -51,7 +51,7 @@ namespace NWApp.ViewModels
 
         private async void OnAcceptEdit()
         {
-            if (!_customer.Validate())
+            if (_customer.HasErrors)
                 return;
 
             bool result;

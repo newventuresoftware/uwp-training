@@ -127,15 +127,6 @@ namespace NWApp.Models
             return hashCode;
         }
 
-        public bool Validate()
-        {
-            ValidateId(ID);
-            ValidateContactName(ContactName);
-            ValidateCompanyName(CompanyName);
-
-            return !HasErrors;
-        }
-
         public Task ValidatePropertyAsync(Entity entity, string propertyName)
         {
             EntityProperty property = entity.GetEntityProperty(propertyName);
